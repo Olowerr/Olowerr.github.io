@@ -1,3 +1,6 @@
+
+/* ##### Header, Basic Body & Footer ##### */
+
 body {
     background-color: #333333;
     margin: 0%;
@@ -68,112 +71,44 @@ footer {
     margin-top: auto;
 }
 
-/*
-    W3 op
-    https://www.w3schools.com/howto/howto_js_slideshow.asp 
-*/
 
-.mySlides5, .mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+/* ##### Projects.html ##### */
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 720px;
-  position: relative;
-  float: left;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 170px;
-  padding-top: 2px;
-  width: 30px;
-  height: 26px;
-  margin: 10px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.3s ease;
-  border-radius: 15px;
-  user-select: none;
-  background-color: rgba(25, 25, 25, 0.5);
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.imgParagraphBox {
-    margin: auto;
-    margin-bottom: 100px;
-    height: 460px;
-    max-height: 460px;
+#front-page {
+    margin-top: 20px;
     display: flex;
+    justify-content: space-between;
 }
 
-.imgParagraphBox img {
-    width: 700px;
-    max-height: 350px;
-    object-fit: cover;
+#front-text {
+    padding: 0px;
+    max-width: 45%;
 }
 
-.imgParagraphBox .boxContent {
-    margin-left: 10px;
-    border-left: solid;
-    padding-left: 10px;
+#front-img {
+    padding: 0px;
+    max-width: 45%;
 }
 
-.imgParagraphBox h2 {
-    font-size: 48px;
-    margin: 0px;
+.front-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.imgParagraphBox p {
-    line-height: 150%;
+#project-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
-.imgParagraphBoxList {
-    line-height: 140%;
+#project-list img {
+    max-width: 100%;
+    height: auto;
 }
 
-.imgParagraphBoxList ul {
-    margin-top: 2px;
-}
-
-.imgParagraphBox .imgPreview {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-top: 5px;
-    margin-right: 5px;
-    transition: 0.05s;
-}
-
-.imgParagraphBox .imgPreview:hover {
-    outline: solid 2px;
-}
-
-.exLink {
-    margin-bottom: 5px;    
-}
-
-.exLink a {
-    color: rgb(25, 167, 210);
-}
-
-.exLink a:hover {
-    color: rgb(171, 235, 255);
-}
-
+/* ##### About.html & Contact.html ##### */
 .textDividing {
     column-count: 3;
     line-height: 140%;
@@ -187,6 +122,7 @@ footer {
 .contactDiv a:hover {
     color: rgb(171, 235, 255);
 }
+
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     main {

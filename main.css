@@ -10,16 +10,16 @@ body {
 
 header {
     background-color: rgb(25, 25, 25);
-    height: 120px;
     width: 100%;
-    display: flex;
 }
 
 #headerContent {
-    width: 100%;
-    margin: auto;
+    width: 60%;
+    height: 100px;
     margin-left: 20%;
     margin-right: 20%;
+    vertical-align: middle;
+    line-height: 100px;
 }
 
 #headerContent h1 {
@@ -36,7 +36,6 @@ header {
 #headerLinks { 
     float:right;
     position: relative;
-    top: 20px;
 }
 
 #headerLinks a { 
@@ -58,57 +57,196 @@ header {
     top: 12px;
 }
 
-main {
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 0px;
-}
-
 footer {
     background-color: rgb(25, 25, 25);
     width: 100%;
     height: 100px;
-    margin-top: auto;
+    bottom: 0;
 }
 
+.divFooter {
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerMain {
+    width: 60%;
+    margin-left: 20%;
+    top: 45%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.footerContent {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
 
 /* ##### Projects.html ##### */
 
-#front-page {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+#coverImage {
+    width: 100%;
+    margin-bottom: -5px;
 }
 
-#front-text {
-    padding: 0px;
-    max-width: 45%;
+#profileDiv {
+    padding: 5%;
+    border-top: 8px black;
+    border-bottom: 8px black;
+    border-style: solid;
+    border-right: 0px black;
+    border-left: 0px black;
 }
 
-#front-img {
-    padding: 0px;
-    max-width: 45%;
-}
-
-.front-img img {
-    max-width: 100%;
-    height: auto;
+#profileDiv img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
 }
 
-#project-list {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+#profileDiv p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+    font-size: 24px;
 }
 
-#project-list img {
-    max-width: 100%;
+#mainContent {
+    display: inline-flex; /*shrinkwrap to image native width*/
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+#backgroundImg {
+    display:block;
+    width: 100%;
     height: auto;
+}
+
+.projectsDiv {
+    position: absolute;
+    
+    width: 50%;
+    height: 370px;
+    
+    padding: 5px;
+    padding-top: 20px;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border-radius: 10px;
+}
+
+#projectsDivCenterBox {
+    text-align: center;
+}
+
+.projectFigure {
+    float: left;
+    width: 33%;
+}
+
+.projectFigure img {
+    width: 90%;
+    border-radius: 5%;
+    transition: transform .2s; /* Animation */
+}
+
+.projectFigure img:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+
+.projectFigure a {
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+}
+
+.projectFigure a h2:hover {
+    color: #b4b4b4; 
+    text-decoration-color: #b4b4b4;
+}
+
+.projectFigure p {
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* ##### Horse Valley / Presumed Dead / Joy ##### */
+
+.projectTitle {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: -5%;
+}
+
+.projectLogo {
+    width: 45%;
+    margin-bottom: -5%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectSection {
+    margin-top: 10%;
+    height: 400px;
+}
+
+.projectSection p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.projectSection h3 {
+    font-size: 24px;
+}
+
+.projectSection ul {
+    margin: 0;
+    list-style-position: inside;
+}
+
+.projectSection li {
+    margin-top: 3px;
+}
+
+.projectSection img {
+    width: 55%;
+    margin-bottom: 60px;
+}
+
+.sectionLeft img {
+    float: right;
+    margin-left: 20px;
+}
+
+.sectionRight img {
+    float: left;
+    margin-right: 20px;
 }
 
 /* ##### About.html & Contact.html ##### */
+
+#generalMain {
+    width: 60%;
+    height: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .textDividing {
     column-count: 3;
     line-height: 140%;
@@ -124,6 +262,8 @@ footer {
 }
 
 
+
+/*
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     main {
         margin-left: 5%;
@@ -241,3 +381,4 @@ footer {
         text-align: center;
     }
 }
+*/

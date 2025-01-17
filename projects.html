@@ -17,34 +17,82 @@
                 <a target="_blank" href="https://github.com/Olowerr"><img height="30" src="imgs/GithubBlue.png" alt="Github"></a>
             </div>
             <div id="headerLinks">
-                <a class="pageLinkMargin" style="color: #478ac9;" href="projects.html">Projects</a>
-                <a class="pageLinkMargin" href="about.html">About</a>
+                <a class="pageLinkMargin" style="color: #478ac9;" href="projects.html">Home</a>
+                <a class="pageLinkMargin" href="about.html">About me</a>
                 <a style="margin-right: 60px;" href="contact.html">Contact</a>
             </div>
             
         </div>
 
     </header>
+
     <main>
-        <div id="front-page">
-            <div id="front-text">
-                <h3>me llamo oliv</h3>
-                <p style="line-height: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div id="front-img">
-                <img src="imgs/me2Smol.png" alt="Me">
-            </div>
+        <img id="coverImage" src="imgs/coverImage.png" alt="CoverImage">
+        
+        <div id="profileDiv">
+            <figure style="margin: auto;">
+                <img style="border-radius: 50%;" src="imgs/me2Smol.png" alt="Me">
+            </figure>
+            <p>
+                Hi! I'm Oliver Klingspor, a Gameplay Programmer at Ming Media based in Sweden, Uppsala. Check out some of my projects below!
+            </p>
         </div>
 
-        <div id="project-list">
-            <img src="imgs/joyRed.png" alt="Image 1">
-            <img src="imgs/joyRed.png" alt="Image 2">
-            <img src="imgs/joyRed.png" alt="Image 3">
-            <img src="imgs/joyRed.png" alt="Image 4">
+        <!--
+            NEED TO MAKE IT CLEAR THAT YOU CAN CLICK THE 4 (3?) IMAGES
+            * MYB GAME TITLE HAS UNDERSCORE?
+            * IMAGES SHOULD SCALE UP A LIL ON HOVER
+        -->
+
+        <div id="mainContent">
+            <img id="backgroundImg" src="imgs/hvBlurred.png" alt="Horse Valley Blurred">
+
+            <div class="projectsDiv">
+                <div id="projectsDivCenterBox">
+                    <div class="projectFigure">
+                        <a href="HorseValley.html">
+                            <img src="imgs/camarillo.png">
+                            <h2>
+                                Horse Valley
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="projectFigure">
+                        <a href="PresumedDead.html">
+                            <img src="imgs/presumedDeadSitting2.png">
+                            <h2>
+                                Presumed Dead
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="projectFigure">
+                        <a href="Joy.html">
+                            <img src="imgs/JoyBlur1Cropped2.png">
+                            <h2>
+                                Joy
+                            </h2>
+                        </a>
+                    </div>
+                    <!--<div class="projectFigure">
+                        <a href="GPURaytracer.html"><img src="imgs/linkedInBlue.png"></a>
+                        <p> Heiiii </p>
+                    </div>-->
+                </div>
+            </div>
         </div>
-    </main>      
-    <footer style="position: relative;">
+    </main>  
+    <footer>
+        <div class="footerMain">
+            <div class="footerContent">
+                Oliver Klingspor
+            </div>
+            <div class="footerContent">
+                oliver.klingspor@hotmail.com
+            </div>
+            <!--<div class="footerContent">
+                072 919 90 12
+            </div>-->
+        </div>
     </footer>
-
 </body>
 </html>

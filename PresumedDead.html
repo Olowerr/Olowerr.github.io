@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Oliver Klingspor</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="main.css" rel="stylesheet" type="text/css">  
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header>
+        <div id="headerContent">
+            <h1><a href="projects.html">Oliver Klingspor</a></h1>
+            
+            <div id="headerExternalLinks">
+                <a target="_blank" style="margin-right: 5px;" href="https://www.linkedin.com/in/oliver-klingspor"><img height="30" src="imgs/linkedInBlue.png" alt="LinkedIn"></a>
+                <a target="_blank" href="https://github.com/Olowerr"><img height="30" src="imgs/GithubBlue.png" alt="Github"></a>
+            </div>
+            <div id="headerLinks">
+                <a class="pageLinkMargin" style="color: #478ac9;" href="projects.html">Home</a>
+                <a class="pageLinkMargin" href="about.html">About me</a>
+                <a style="margin-right: 60px;" href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </header>
+    <main style="margin-left: 20%; margin-right: 20%;">
+
+        <!--<h2 class="projectTitle"> Horse Valley </h2>-->
+        <img class="projectLogo" src="imgs/presumedDeadLogo.png" alt="Presumed Dead Logo">
+
+        <div class="projectSection sectionLeft">
+            <img src="imgs/PreDead3.png">
+            <h3>Overview:</h3>
+            <p>
+               Presumed Dead is a rouge-like dungeon crawler set inside a mysterious forest, where you can play alone or with up to three friends.
+               <br>
+               <br>
+               Players must fight off different monsters while exploring the area to try and find a portal which advances them to the next level.
+               Along their journey they're able to obtain passive upgrades and active items to aid them in battle.
+               <br>
+               <br>
+               Presumed Dead was developed together with seven other students at Blekinge Institute of Technology using our own custom built engine in C++, Vulkan and ENTT.
+            </p>
+        </div>
+
+        <div class="projectSection sectionRight">
+            <img src="imgs/PreDeadLobby.png">
+            <h3>My Role:</h3>
+            <p>
+                During this almost four months long project I took on a Gameplay Programmer / Technical Artist role, where I had responsibilities in both the engine and the game itself.
+                Some of my responsibilities and contributions are:
+                <ul>
+                    <li>Procedurally generating the environment</li>
+                    <li>Handling the dungeon rooms</li>
+                    <li>3D Audio and music streaming using OpenAL</li>
+                    <li>Animation slots & blending</li>
+                    <li>Creating a slime monster model</li>
+                </ul>
+            </p>
+            <p>
+                A part of my role was to also apply the agile methodology Scrum, where I would help define user stories, write tasks and estimate their time frame.
+            </p>
+        </div>
+
+        <div class="projectSection sectionLeft">
+            <img src="imgs/PreDead1.png">
+            <h3>Challenges & Experiences:</h3>
+            <!--
+                Like what challenges did I have to overcome, what have I learned
+
+                first ever procedural generation
+                how music streaming works
+                wrapping OpenAL to fit our engine and structure
+                Came up with a way of supporting animation slots
+                animation blending
+            -->
+            <p>
+                During the development of Presumed Dead I learned a lot and had the opporitunity to explore multiple different areas.
+                It was my first time procedurally generating an environment which had to meet certain criteria. 
+                The map had to ensure enough space to freely move around in, enemies of varying sizes required enough room to spawn in, 
+                and was it essential that all areas of the world were accessible.
+                <br>
+                <br>
+                I also got to explore how OpenAL works and how it could be incoperated into our project to fit our specific engine design and its needs.
+                The two main challenges was supporting music streaming, and allowing any entity to play any sound while
+                still respecting a limited amount of audio sources due to performance requirements.
+                <br>
+                <br>
+                Anther challenge we were faced with was creating support for playing different animations on different parts of a skeleton.
+                After some discussions around some ideas, I came up with a simple way of tying each bone in a skeleton to a 'slot', and to easily define slots using bone names.
+                Allowing us to play an animation on a specified slot, or the whole skeleton.
+            </p>
+        </div>
+    </main>      
+    <footer style="margin-top: 5%;">
+        <div class="footerMain">
+            <div class="footerContent">
+                Oliver Klingspor
+            </div>
+            <div class="footerContent">
+                oliver.klingspor@hotmail.com
+            </div>
+            <!--<div class="footerContent">
+                072 919 90 12
+            </div>-->
+        </div>
+    </footer>
+</body>
+</html>

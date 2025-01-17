@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Oliver Klingspor</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="main.css" rel="stylesheet" type="text/css">  
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header>
+        <div id="headerContent">
+            <h1><a href="projects.html">Oliver Klingspor</a></h1>
+            
+            <div id="headerExternalLinks">
+                <a target="_blank" style="margin-right: 5px;" href="https://www.linkedin.com/in/oliver-klingspor"><img height="30" src="imgs/linkedInBlue.png" alt="LinkedIn"></a>
+                <a target="_blank" href="https://github.com/Olowerr"><img height="30" src="imgs/GithubBlue.png" alt="Github"></a>
+            </div>
+            <div id="headerLinks">
+                <a class="pageLinkMargin" style="color: #478ac9;" href="projects.html">Home</a>
+                <a class="pageLinkMargin" href="about.html">About me</a>
+                <a style="margin-right: 60px;" href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </header>
+    <main style="margin-left: 20%; margin-right: 20%;">
+
+        <!--<h2 class="projectTitle"> Horse Valley </h2>-->
+        <img class="projectLogo" src="imgs/joyLogo2.png" alt="Joy Logo">
+
+        <div class="projectSection sectionLeft">
+            <img src="imgs/Joychill.png">
+            <h3>Overview:</h3>
+            <p>
+                Joy is a 3D platformer where the goal is to traverse a course as fast as possible while collecting bolts.
+                It was developed by me and four other students at Blekinge Institute of Technology during a 6 week period.
+                <br>
+                <br>
+                Joy uses its own custom built engine which runs on C++ and DirectX 11.
+                It also has its own binary fileformat (.JOY) which is able to store mesh data, object data and more.
+            </p>
+        </div>
+
+        <div class="projectSection sectionRight">
+            <img src="imgs/joyIngame2.png">
+            <h3>My Role:</h3>
+            <p>
+                My main responsibilities in the development of Joy was mainly engine and rendering.
+                Meaning I played a large part in setting up the core structure of Joy which would allow my friends to get started on gameplay.
+                
+                <br>
+                <br>
+                The follow are some more specifics behind my contributions:
+                <ul>
+                    <li>Engine structure</li>
+                    <li>Rendering (including instanced rendering)</li>
+                    <li>Glow</li>
+                    <li>Light maps</li>
+                    <li>Converting <b>.</b>FBX to <b>.</b>JOY</li>
+                </ul>
+            </p>
+            <p>
+                An essential part of my role has also been communicating with our incredible Game Artist and Game Designer to help shape upcoming updates.
+            </p>
+        </div>
+
+        <div class="projectSection sectionLeft">
+            <img src="imgs/joyConcept.png">
+            <h3>Challenges & Experiences:</h3>
+            <!--
+                Like what challenges did I have to overcome, what have I learned
+
+                light maps
+                instanced rendering
+                converting .fbx to .joy using Autodesk api thing
+                first encounter with scrum and sprints
+                creating an engine that needs to be understood by others and easy to use.
+            -->
+            <p>
+                During the development of Joy my main challenges were primarly focused around the engine and rendering techniques.
+                I had never properly implemented light maps or instanced rendering before, but I understood the main principles and wanted to give both a proper try in a real project.
+                Both taught me a lot about rendering, limitations of the techniques and what should be considered before implementing, it was also fun to see a performance boost from the techniques.
+                <br>
+                <br>
+                Since Joy used its own binary fileformat, we were challenged with understanding how binary data is written and saved to disk.
+                While it was difficult at first, as soon as I had grasped the core ideas it became a lot easier to work with, and the challenge had become fun.
+                <br>
+                <br>
+                Joy was my first encounter with scrum and sprints. We were tasked with creating a product backlog, sprint backlog, user stories, tasks and their estimations.
+                Estimating tasks quickly proved quite difficult, and it was common for me to give a too low estimate.
+                However, the more tasks we wrote and completed, the better our estimates were, and it became fun to realise you estimated perfectly.
+            </p>
+
+        </div>
+
+    </main>      
+    <footer style="margin-top: 5%;">
+        <div class="footerMain">
+            <div class="footerContent">
+                Oliver Klingspor
+            </div>
+            <div class="footerContent">
+                oliver.klingspor@hotmail.com
+            </div>
+            <!--<div class="footerContent">
+                072 919 90 12
+            </div>-->
+        </div>
+    </footer>
+</body>
+</html>
